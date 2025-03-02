@@ -67,7 +67,7 @@ body:
     id: screenshots
     attributes:
       label: Screenshots
-      description: Graphics, Glitches, 'Test-Case' Messages, etc.
+      description: Graphics, Glitches, Crash messages
     validations:
       required: true
   - type: markdown

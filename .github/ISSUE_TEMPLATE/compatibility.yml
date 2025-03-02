@@ -1,0 +1,83 @@
+# This template is mostly copied from box86
+# MIT License
+
+# Copyright (c) 2020 ptitSeb
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+name: Compatibility report
+description: A template to report game/software compatibilities
+title: "GAME NAME HERE"
+labels: []
+assignees: ["offtkp"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Description
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a simple description of what happens during the emulation
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ### Version string
+  - type: textarea
+    id: tested_on
+    attributes:
+      label: Version string
+      description: felix86 version information and hardware info -- run `felix86 -v` to obtain them
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        **Current behavior:**
+  - type: textarea
+    id: current_behavior
+    attributes:
+      label: Current behavior
+      description: Can be similar to your desciption, just more concise
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ### Screenshots
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Graphics, Glitches, 'Test-Case' Messages, etc.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ### Additional Information
+  - type: textarea
+    id: additional_information
+    attributes:
+      label: Additional Information
+      description: Any additional information such as configuration or other comments
+    validations:
+      required: true

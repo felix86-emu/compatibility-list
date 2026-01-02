@@ -22,7 +22,7 @@
 # SOFTWARE.
 name: Compatibility report
 description: A template to report game/software compatibilities
-title: "GAME NAME HERE"
+title: "Game name here"
 labels: []
 assignees: ["offtkp"]
 body:
@@ -67,17 +67,6 @@ body:
     id: screenshots
     attributes:
       label: Screenshots
-      description: Graphics, Glitches, Crash messages
-    validations:
-      required: true
-  - type: markdown
-    attributes:
-      value: |
-        ### Additional Information
-  - type: textarea
-    id: additional_information
-    attributes:
-      label: Additional Information
-      description: Any additional information such as configuration or other comments
+      description: Graphics, glitches, crash messages
     validations:
       required: true
